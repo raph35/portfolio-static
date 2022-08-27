@@ -1,0 +1,128 @@
+header {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #85181E ;
+    color: white;
+}
+
+nav * {
+    color: white !important;
+}
+.navbar {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.nav-item {
+    margin: 0 20px;
+}
+
+.nav-link {
+    font-weight: bold;
+}
+#logo-brand {
+    height: 2em;
+}
+
+
+#banner-image {
+    background-image: url('../img/Pexels.png');
+    background-size: cover;
+    width: 80%;
+    aspect-ratio: 1;
+}
+
+/*
+
+Custom theme
+
+*/
+
+
+
+.highlight-text {
+    color: #F4C109;
+    font-weight: bold;
+}
+
+.techno-ico {
+    height: 40px;
+    width: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px
+}
+
+#techno-maitrise {
+    background-color: #D9D9D9;
+
+}
+
+
+#newsletter {
+    background-color: #D9D9D9;
+}
+
+footer {
+    background-color: #313131;
+    color: white;
+}
+
+.img-slide{
+    max-width: 80%;
+    aspect-ratio: 1;
+}
+
+.footer-ico {
+    height: 30px;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+/*
+
+Override bootstrap button
+
+*/
+
+@media (max-width: 768px) {
+    .offcanvas-collapse {
+        position: fixed;
+        top: 56px;
+        /* Height of navbar */
+        bottom: 0;
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        overflow-y: auto;
+        background-color: var(--gray-dark);
+        transition: -webkit-transform .3s ease-in-out;
+        transition: transform .3s ease-in-out;
+        transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        z-index: 2;
+        }
+
+    .offcanvas-collapse.open {
+        -webkit-transform: translateX(-1rem);
+        transform: translateX(-2rem);
+        /* Account for horizontal padding on navbar */
+    }
+}
+
+.btn-primary {
+    background-color: #3A3A3A;
+    border-color:#3A3A3A
+}
+
+#carouselDescription .description-item {
+    height: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    overflow: hidden;
+}
+
+#carouselDescription .active {
+    opacity: 1;
+    height: fit-content;
+}
